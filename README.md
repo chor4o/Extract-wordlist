@@ -3,7 +3,7 @@
 
 Ferramenta que auxilia o time de **Red Team** a extrair palavras significativas de URLs — ideal para **pentests** e criação de **wordlists personalizadas** para **fuzzing** e outras técnicas ofensivas.
 
-A partir de um arquivo `.txt` contendo URLs, o script extrai os **caminhos (paths)** e **parâmetros (query strings)**, filtrando apenas palavras **alfabéticas** (sem símbolos, números ou repetições).
+A partir de um arquivo `.txt` contendo URLs, o script extrai os **caminhos (paths)** e **parâmetros (query strings)**, filtrando apenas palavras (sem símbolos, números ou repetições).
 
 ---
 
