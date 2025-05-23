@@ -40,11 +40,15 @@ python3 wordlist.py -f urls.txt -o resultado.txt -v
 ## 🧪 Exemplo de Pipeline
 
 ```bash
-chaos -d exemplo.com | httpx -silent | anew domains
-cat domains | gau --threads 5 | anew gau.txt
-python3 wordlist.py -f gau.txt -o resultado.txt
+chaos -d exemplo.com | httpx -silent | anew domains (Busca por subdominios e valida se esta ativo)
+cat domains | gau --threads 5 | anew gau.txt (Busca por parâmetros)
+python3 wordlist.py -f gau.txt -o resultado.txt (Wordlista personalizado criado)
 ```
+Tools Utiliza.
 
+chaos projectdiscovery - https://github.com/projectdiscovery/chaos-client
+gau - https://github.com/lc/gau
+httpx - https://github.com/projectdiscovery/httpx
 ---
 
 ## ✅ Resultado Esperado
