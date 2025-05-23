@@ -13,7 +13,7 @@ def extrair_palavras_de_url(url):
     palavras = []
     try:
         parsed_url = urlparse(url)
-    except ValueError as e:
+    except ValueError:
         print(f"⚠️ URL INVALIDA ignorada: {url} (URL INVALIDA)")
         return palavras  # retorna lista vazia e ignora essa URL
 
