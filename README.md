@@ -44,7 +44,7 @@ chaos -d exemplo.com | httpx -silent | anew domains (Busca por subdominios e val
 cat domains | gau --threads 5 | anew gau.txt (Busca por parâmetros)
 python3 wordlist.py -f gau.txt -o resultado.txt (Wordlista personalizado criado)
 ```
-Tools Utiliza.
+### 🚀 Tools Utiliza.
 
 chaos projectdiscovery - https://github.com/projectdiscovery/chaos-client
 gau - https://github.com/lc/gau
