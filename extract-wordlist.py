@@ -1,3 +1,6 @@
+# Criado por William Bastos (by chor4o)
+# Script para extrair palavras alfabéticas de URLs e salvar em um arquivo .txt
+
 import argparse
 import re
 from urllib.parse import urlparse, parse_qs
@@ -8,7 +11,11 @@ def filtrar_palavra(palavra):
 
 def extrair_palavras_de_url(url):
     palavras = []
-    parsed_url = urlparse(url)
+    try:
+        parsed_url = urlparse(url)
+    except ValueError as e:
+        print(f"⚠️ URL INVALIDA ignorada: {url} (URL INVALIDA)")
+        return palavras  # retorna lista vazia e ignora essa URL
 
     caminho = parsed_url.path.strip('/').split('/')
     palavras.extend(caminho)
@@ -18,7 +25,6 @@ def extrair_palavras_de_url(url):
         palavras.append(chave)
         palavras.extend(valores)
 
-    # Filtro aplicado aqui
     return [p for p in palavras if p and filtrar_palavra(p)]
 
 def processar_arquivo_de_urls(caminho_arquivo):
@@ -49,6 +55,7 @@ def main():
     salvar_lista_em_txt(palavras, args.output)
 
     print(f"✅ Lista salva em: {args.output} ({len(palavras)} palavras)")
+    print("by chor4o")
 
 if __name__ == '__main__':
     main()
