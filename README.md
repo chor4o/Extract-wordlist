@@ -47,8 +47,11 @@ python3 wordlist.py -f gau.txt -o resultado.txt (Wordlista personalizado criado)
 ### 🚀 Tools Utilizada Tools Utiliza
 
 chaos projectdiscovery - `https://github.com/projectdiscovery/chaos-client`
+
 gau - `https://github.com/lc/gau`
+
 httpx - `https://github.com/projectdiscovery/httpx`
+
 ---
 
 ## ✅ Resultado Esperado
